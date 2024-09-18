@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+
+    <main>
+      <div class="listtitle">
+        <i class="fas fa-list-ul"></i>
+        <h2>Todo List</h2>
+      </div>
+
+      <div id="Task_div" class="tasks-container">
+        <div class="task">
+          <div class="checkboxdiv">
+            <input class="checkeditem" type="checkbox" />
+
+            <div class="taskcontent">
+              <p class="tasktext">Task 1</p>
+              <p>small description</p>
+            </div>
+          </div>
+          <div class="taskbtns">
+            <button class="alltaskbtns deletetaskbtn">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="alltaskbtns edittaskbtn">
+              <i class="fas fa-edit"></i>
+            </button>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <button id="NewTaskbtn" class="taskbtn alltaskbtns">+ New Task</button>
+
+      <div id="addDIV" class="Addtask">
+        <h2 class="addtext">Add a new Task</h2>
+        <h2 class="updatetext">Update existing Task</h2>
+        <div class="addinputbtn">
+          <div class="inputfields">
+            <input type="text" id="tasktitle" placeholder="Enter the Task" />
+            <input
+              type="text"
+              id="taskdesc"
+              placeholder="Enter the Description"
+              style="margin-top: 10px"
+            />
+          </div>
+          <button class="alltaskbtns addtaskbtn" id="addinputbtn">
+            Insert
+          </button>
+          <button class="alltaskbtns addtaskbtn updatebtn" id="Updatebtn">
+            Update
+          </button>
+        </div>
+      </div>
+
+      <!-- the notification for the success or deleted or updated successfully  -->
+      <div id="SuccessAlert" class="success_alert">
+        Successfully added task!
+      </div>
+      <div id="DeletedAlert" class="delete_alert">
+        Task is deleted Successfully!
+      </div>
+      <div id="UpdateAlert" class="update_alert">Task is Updated !</div>
+    </main>
+  </body>
+  <script src="js/script.js"></script>
+</html>
